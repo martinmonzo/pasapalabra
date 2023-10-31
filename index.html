@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<html lang="es">
+    <head>
+        <title>Pasapalabra</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Complete los datos para comenzar a jugar</h2>
+                <form id="modalForm" action="rosco.html" method="get">
+                    <hr>
+                    <div class="input-container">
+                        <i class="fa fa-user" style="color: blue;"></i>
+                        <input type="text" id="jugador1" name="jugador1" placeholder="Ingrese el nombre del Jugador 1" required
+                            oninvalid="this.setCustomValidity('El campo es inválido.')"
+                            oninput="setCustomValidity('')"
+                        >
+                    </div>
+                        
+                    <div class="input-container">
+                        <i class="fa fa-user" style="color: rgb(255, 98, 0);"></i>
+                        <input type="text" id="jugador2" name="jugador2" placeholder="Ingrese el nombre del Jugador 2" required
+                            oninvalid="this.setCustomValidity('El campo es inválido.')"
+                            oninput="setCustomValidity('')"
+                        >
+                    </div>
+                    <hr>
+
+                    <div class="input-container">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <label for="comodines">Comodines disponibles:</label>
+                        <select id="comodines" name="comodines" required>
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-container">
+                        <div class="left-side">
+                            <i class="fa fa-clock"></i>
+                            <label for="segundos">Segundos iniciales:</label>
+                            <input type="number" id="segundos" name="segundos" min="0" max="180" value="140"
+                                oninvalid="this.setCustomValidity('El campo ser un valor entre 0 y 180 segundos.')"
+                                oninput="setCustomValidity('')"
+                            >
+                        </div>
+                        <div>
+                            <button type="submit">COMENZAR</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

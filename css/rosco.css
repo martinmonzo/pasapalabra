@@ -1,0 +1,250 @@
+.deg-A {
+   transform: rotate(270deg) translate(500%) rotate(-270deg);
+}
+.deg-B {
+   transform: rotate(284.4deg) translate(500%) rotate(-284.4deg);
+}
+.deg-C {
+   transform: rotate(298.8deg) translate(500%) rotate(-298.8deg);
+}
+.deg-D {
+   transform: rotate(313.2deg) translate(500%) rotate(-313.2deg);
+}
+.deg-E {
+   transform: rotate(327.6deg) translate(500%) rotate(-327.6deg);
+}
+.deg-F {
+   transform: rotate(342deg) translate(500%) rotate(-342deg);
+}
+.deg-G {
+   transform: rotate(356.4deg) translate(500%) rotate(-356.4deg);
+}
+.deg-H {
+   transform: rotate(370.8deg) translate(500%) rotate(-370.8deg);
+}
+.deg-I {
+   transform: rotate(385.2deg) translate(500%) rotate(-385.2deg);
+}
+.deg-J {
+   transform: rotate(399.6deg) translate(500%) rotate(-399.6deg);
+}
+.deg-L {
+   transform: rotate(414deg) translate(500%) rotate(-414deg);
+}
+.deg-M {
+   transform: rotate(428.4deg) translate(500%) rotate(-428.4deg);
+}
+.deg-N {
+   transform: rotate(442.8deg) translate(500%) rotate(-442.8deg);
+}
+.deg-ENIE {
+   transform: rotate(457.2deg) translate(500%) rotate(-457.2deg);
+}
+.deg-O {
+   transform: rotate(471.6deg) translate(500%) rotate(-471.6deg);
+}
+.deg-P {
+   transform: rotate(486deg) translate(500%) rotate(-486deg);
+}
+.deg-Q {
+   transform: rotate(500.4deg) translate(500%) rotate(-500.4deg);
+}
+.deg-R {
+   transform: rotate(514.8deg) translate(500%) rotate(-514.8deg);
+}
+.deg-S {
+   transform: rotate(529.2deg) translate(500%) rotate(-529.2deg);
+}
+.deg-T {
+   transform: rotate(543.6deg) translate(500%) rotate(-543.6deg);
+}
+.deg-U {
+   transform: rotate(558deg) translate(500%) rotate(-558deg);
+}
+.deg-V {
+   transform: rotate(572.4deg) translate(500%) rotate(-572.4deg);
+}
+.deg-X {
+   transform: rotate(586.8deg) translate(500%) rotate(-586.8deg);
+}
+.deg-Y {
+   transform: rotate(601.2deg) translate(500%) rotate(-601.2deg);
+}
+.deg-Z {
+   transform: rotate(615.6deg) translate(500%) rotate(-615.6deg);
+}
+
+body {
+   background: linear-gradient(45deg, #ffffff, #c8c8c8);
+}
+
+.contenedorRosco {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.circulo, .rectangulo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   color: white;
+   user-select: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 3vh;
+}
+.circulo {
+   border-radius: 50%;
+}
+
+.letra {
+   background: linear-gradient(45deg, blue, rgb(79, 107, 247));
+   width: 7vh;
+   height: 7vh;
+   font-size: 4vh;
+   cursor: pointer;
+}
+
+.countdown {
+   width: 22vh;
+   height: 22vh;
+   background: linear-gradient(45deg, blue, rgb(79, 107, 247));
+   font-size: 12vh;
+   font-weight: bold;
+}
+.deg-countdown {
+   top: 60vh;
+   right: 85vw;
+}
+
+.aciertos {
+   width: 12vh;
+   height: 12vh;
+   background: linear-gradient(45deg, rgb(67, 235, 67), rgb(110, 144, 110));
+   font-size: 8vh;
+   font-weight: bold;
+}
+.deg-aciertos {
+   top: 84vh;
+   right: calc(85vw + 10vh);
+}
+.errores {
+   width: 8vh;
+   height: 12vh;
+   background: linear-gradient(45deg, red, rgb(136, 47, 47));
+   font-size: 8vh;
+}
+.deg-errores {
+   top: 84vh;
+   right: 85vw;
+}
+
+.sumarRestarSegundos {
+   width: 3vw;
+   height: 3vw;
+   background: linear-gradient(45deg, blue, rgb(79, 107, 247));
+}
+.deg-sumarSegundos {
+   top: 64vh;
+   right: 81vw;
+}
+.deg-restarSegundos {
+   top: 73vh;
+   right: 81vw;
+}
+
+/* BOTONES */
+.boton {
+   cursor: pointer;
+   font-size: 3vh;
+}
+.botonCircular {
+   width: 3vw;
+   height: 3vw;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.botonPlayPausa {
+   width: 15vw;
+   height: 4vh;
+   background: linear-gradient(45deg, blue, rgb(79, 107, 247));
+}
+.deg-botonPlayPausa {
+   top: 5.5vh;
+   right: 5vw;
+}
+.acierto {
+   background: linear-gradient(45deg, rgb(67, 235, 67), rgb(110, 144, 110));
+}
+.deg-acierto {
+   top: 10vh;
+   right: 17vw;
+}
+.pasapalabra {
+   background: linear-gradient(45deg, orange, rgb(249, 183, 60));
+}
+.deg-pasapalabra {
+   top: 10vh;
+   right: 13vw;
+}
+.error {
+   background: linear-gradient(45deg, red, rgb(136, 47, 47));
+}
+.deg-error {
+   top: 10vh;
+   right: 9vw;
+}
+.cambiarRosco {
+   background: gray;
+}
+.deg-cambiarRosco {
+   top: 10vh;
+   right: 5vw;
+}
+/* */
+
+.nombreJugador {
+   width: 22vh;
+   height: 8vh;
+   background: transparent;
+   color: blue;
+   font-size: 6vh;
+   font-weight: bold;
+}
+.deg-nombreJugador {
+   top: 5.5vh;
+   right: 85vw;
+}
+
+.letraCentral {
+   font-size: 5vh;
+   font-family: Arial, Helvetica, sans-serif;
+   user-select: none;
+}
+
+.comodin {
+   border: none;
+   background: linear-gradient(45deg, orange, rgb(249, 183, 60));
+   width: 4vw;
+   height: 4vw;
+}
+.deg-comodin0 {
+   top: 86vh;
+   right: 5vw;
+}
+.deg-comodin1 {
+   top: 86vh;
+   right: 10.5vw;
+}
+.deg-comodin2 {
+   top: 86vh;
+   right: 16vw;
+}
+
+.disabled {
+   background: lightgray;
+   color: white
+}
